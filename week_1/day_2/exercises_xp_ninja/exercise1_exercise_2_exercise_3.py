@@ -55,14 +55,10 @@ print("Translate from English to Morse")
 user_input = input("Enter text : ").lower()
 
 user_list = list(user_input)
-print(user_list)
 Morse_list = []
 for letter in user_list:
     for key in Morse_dict:
-        print(f"{letter} : {Morse_dict[letter]}")
         Morse_list.append(Morse_dict[letter])
         break
-
-print(Morse_list)
 Morse_word = " ".join(Morse_list)
-print(Morse_word)
+print(f"{user_input} >>> {Morse_word}")
