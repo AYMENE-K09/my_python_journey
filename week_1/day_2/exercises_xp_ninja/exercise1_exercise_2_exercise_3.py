@@ -44,3 +44,25 @@ first_name_user = input("enter your first name: ")
 middle_name_user = input("enter your middle name: ")
 last_name_user = input("enter your last name: ")
 get_full_name(first_name_user, middle_name_user, last_name_user)
+
+
+#--------------------exercise_3-------------------
+
+Morse_dict = {
+    'a' : ".-",'b' : "-...",'c' : "-.-.",'d' : "-..",'e' : ".",'f' : "..-.",'g' : "--.",'h' : "....",'i' : "..",'j' : ".---",'k' : "-.-",'l' : ".-..",'m' : "--",'n' : "-.",'o' : "---",'p' : ".--.",'q' : "--.-",'r' : ".-.",'s' : "...",'t' : "-",'u' : "..-",'v' : "...-",'w' : ".--",'x' : "-..-",'y' : "-.--",'z' : "--..", ' ' : "/"
+}
+print("Translate from English to Morse")
+user_input = input("Enter text : ").lower()
+
+user_list = list(user_input)
+print(user_list)
+Morse_list = []
+for letter in user_list:
+    for key in Morse_dict:
+        print(f"{letter} : {Morse_dict[letter]}")
+        Morse_list.append(Morse_dict[letter])
+        break
+
+print(Morse_list)
+Morse_word = " ".join(Morse_list)
+print(Morse_word)
