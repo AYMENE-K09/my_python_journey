@@ -6,7 +6,7 @@ class TheIncredibles(Family):
         for member in self.members:
             if member['age'] > 18:
                 print(f"{member['name']}'s power is {member['power']}")
-
+ 
             else:
                 print(f"{member['name']} has no power yet")
 

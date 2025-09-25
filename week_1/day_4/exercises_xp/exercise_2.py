@@ -10,7 +10,7 @@ class Dog():
     def run_speed(self):
         return self.weight / self.age * 10
 
-    
+
     def fight(self, other_dog):
         if self.run_speed() * self.weight > other_dog.run_speed() * other_dog.weight:
             return f"{self.name} won the fight"
