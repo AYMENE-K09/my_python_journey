@@ -1,6 +1,6 @@
 
 # exercise_2-----------------------------
-
+'''
 active = True
 last_lenght = 0
 print("enter the long sentence that you can without the char 'A'")
@@ -18,7 +18,7 @@ while active:
     elif user_sentence == "quit":
         print("Good Bye")
         active = False
-
+'''
 
  #exercise 3------------------------------
 
@@ -33,8 +33,12 @@ for word in words:
     if word not in unique_words:
         unique_words.append(word)
 
+non_unique_words = len(words) - len(unique_words) 
+
 
 print(f"the number of characters is:{len(paragraph)}") #characters
 print(f"the number of sentences is: {len(sentences)}") #sentences
 print(f"the number fo words is: {len(words)}") #words
-print(f"the number of unique word is: {len(unique_words)}") #unique words
+print(f"the number of unique words is: {len(unique_words)}") #unique words
+print(f"the number of non-unique words is: {non_unique_words}")
+print(f"the average word per sentence is: {round(len(words) / len(sentences), 2)}")
