@@ -1,6 +1,23 @@
+# exercise_1----------------------------
+# 3 <= 3 < 9 is True cause 3 <= 3 is True and 3 < 9 is True
+# 3 == 3 == 3 is True also 
+# bool(0) is False cause False == 0
+# bool(5 == "5") is False cause int # str
+# bool(4 == 4) == boll("4" == "4") is True cause True == True
+# bool(bool(None)) is False cause bool(None) == Fasle then bool(False) == False
+
+x = (1 == True)
+y = (1 == False)
+a = True + 4
+b = False + 10
+
+print("x is", x)
+print("y is", y)
+print("a:", a)
+print("b:", b)
 
 # exercise_2-----------------------------
-'''
+
 active = True
 last_lenght = 0
 print("enter the long sentence that you can without the char 'A'")
@@ -18,7 +35,6 @@ while active:
     elif user_sentence == "quit":
         print("Good Bye")
         active = False
-'''
 
  #exercise 3------------------------------
 
