@@ -6,7 +6,7 @@ class Circle():
     def __init__(self, radius = 1.0):
         self.radius = radius
 
-    def m_1(self):
+    def method_1(self):
         return  round(2 * math.pi * self.radius , 2)
 
     def method_2(self):
