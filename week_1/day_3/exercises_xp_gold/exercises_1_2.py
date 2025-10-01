@@ -10,7 +10,7 @@ class Circle():
         return  round(2 * math.pi * self.radius , 2)
 
     def method_2(self):
-        return round(pow(math.pi * self.radius, 2), 2)
+        return round(math.pi * pow(self.radius, 2), 2)
 
     def geomet_of_circe(self):
         print("A circle is the set of all points in a plane that are equidistant from a fixed point called the center. The constant distance is the radius.")
